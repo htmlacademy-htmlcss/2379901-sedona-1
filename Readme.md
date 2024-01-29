@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Данила Брагин](https://up.htmlacademy.ru/htmlcss-individual/1/user/2379901).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачёв](https://htmlacademy.ru/profile/angra).
 
 ---
 
