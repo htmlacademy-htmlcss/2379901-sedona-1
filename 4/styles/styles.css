@@ -10,25 +10,23 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/ptsans-700woff2) format("woff2");
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
   font-display: swap;
 }
 
 body {
   font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  color: #242424;
-  background-color: #fbf7f4;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 .page-header {
   color: #000000;
-  background-color: #ffffff;
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   line-height: 24px;
   font-size: 20px;
   color: #000000;
@@ -58,8 +56,6 @@ body {
   background-repeat: no-repeat;
 }
 
-
-
 .slogan {
   background-color: #ffffff;
   color: #000000;
@@ -67,7 +63,6 @@ body {
 }
 
 .slogan-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
@@ -77,7 +72,6 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -88,7 +82,6 @@ body {
 }
 
 .advantages-title-blue {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -99,7 +92,6 @@ body {
 }
 
 .advantages-description {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -107,14 +99,13 @@ body {
 }
 
  .advantages-item-background {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   text-align: center;
 
 }
 
 .peculiarity-title {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -125,7 +116,6 @@ body {
 }
 
 .peculiarity-title-description {
-    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -146,7 +136,6 @@ body {
 }
 
 .peculiarity-description {
-    font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -160,7 +149,6 @@ body {
 }
 
 .search-title {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -171,7 +159,6 @@ body {
 }
 
 .search-text {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -195,7 +182,6 @@ body {
 }
 
 .subscribe-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -211,7 +197,6 @@ body {
 }
 
 .subscribe-text {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -235,7 +220,6 @@ body {
 }
 
 .footer-phone-number {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -246,14 +230,14 @@ body {
 }
 
 .main-header-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
 }
 
-.filter {
+.filter,
+.catalog-filter {
   background-image: url("../images/filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -261,7 +245,6 @@ body {
 }
 
 .catalog-filter-group-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -269,7 +252,6 @@ body {
 }
 
 .control {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -298,8 +280,8 @@ body {
   text-transform: uppercase;
 }
 
-.catalog-filter-title, .catalog-filter-title-number {
-  font-family: "PT Sans", sans-serif;
+.catalog-filter-title,
+.catalog-filter-title-number {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -308,14 +290,12 @@ body {
 }
 
 .select-control {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
 }
 .hotels-card-title {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -323,8 +303,8 @@ body {
   text-decoration: none;
 }
 
-.hotels-card-text, .hotels-card-price {
-  font-family: "PT Sans", sans-serif;
+.hotels-card-text,
+.hotels-card-price {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -352,7 +332,6 @@ body {
 }
 
 .hotels-card-raiting {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -367,7 +346,6 @@ body {
 }
 
 .pagination-link {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -388,7 +366,6 @@ body {
 }
 
 .subscribe-title-hotels {
-  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -399,7 +376,6 @@ body {
 }
 
 .subscribe-text-hotels {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
