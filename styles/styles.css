@@ -42,8 +42,6 @@ body {
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
 }
 
 .navigation-list {
@@ -378,6 +376,7 @@ body {
 }
 
 .select-control {
+  margin-right: 70px;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -490,9 +489,14 @@ body {
 
 .hotels-list {
   display: flex;
-  padding: 0 70px;
+
+  flex-wrap: wrap;
 }
 
 .hotels-card {
   margin-right: 20px;
+}
+
+.catalog-filter-title-container {
+  display: flex;
 }
