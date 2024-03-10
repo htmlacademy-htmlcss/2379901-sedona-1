@@ -648,15 +648,43 @@ body {
   display: flex;
 }
 
+.hotels-list {
+  position: relative;
+}
+
+.hotels-list::after {
+  content: "";
+  position: absolute;
+  width: 1060px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  left: 0;
+  bottom: -40px;
+}
+
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 151px;
+  margin-right: 70px;
+}
+
+.catalog-filter-group:nth-child(2) {
+  margin-right: 140px;
+}
+
 .catalog-filter-group-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-list {
-  margin-right: 140px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .catalog-filter-button:hover,
@@ -678,6 +706,74 @@ body {
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+  position: relative;
+  padding-left: 16px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-input:not(:disabled):hover ~ .control-label {
+  opacity: 0.6;
+}
+
+.control-input:not(:disabled):hover + .control-mark {
+  opacity: 0.6;
+}
+
+.control-input:not(:disabled):active ~ .control-label {
+  opacity: 0.3;
+}
+
+.control-input:not(:disabled):active + .control-mark {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  content: "";
+  background-image: url("../images/hotels/checkmark.svg");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.catalog-filter-label {
+  position: relative;
+}
+
+.from-to {
+  position: absolute;
+  left: 105px;
+  top: 12px;
+  color: #000000;
+  opacity: 0.3;
+  line-height: 24px;
 }
 
 .catalog-filter-button-container {
@@ -764,6 +860,20 @@ body {
   padding-right: 40px;
   margin-left: auto;
   border-radius: 4px;
+}
+
+.select-control:hover {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:focus {
+  border: 2px solid #68a2ca;
+  outline: none;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotels-card-title {
@@ -915,7 +1025,7 @@ body {
 .catalog-filter-item {
   width: 150px;
   justify-content: space-between;
-  margin-right: 70px;
+  margin-bottom: 16px;
 }
 
 .catalog-hotels-container {
@@ -1206,4 +1316,107 @@ body {
 
 .one-stars {
   width: 35px;
+}
+
+.range-input {
+  display: flex;
+  margin-left: 2px;
+}
+
+.range-input-max {
+  width: 83px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 40px 12px 20px;
+}
+
+.range-input-min {
+  width: 83px;
+  background: #f2f2f2;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 12px 40px 12px 20px;
+}
+
+.range-input-min::-webkit-inner-spin-button,
+.range-input-min::-webkit-outer-spin-button,
+.range-input-max::-webkit-inner-spin-button,
+.range-input-max::-webkit-outler-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-input-max:not(:disabled):hover,
+.range-input-min:not(:disabled):hover {
+  background-color: #e6e6e6;
+}
+
+.range-input-max:focus {
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  border-radius: 0 4px 4px 0;
+}
+
+.range-input-min:focus {
+  background: #e6e6e6;
+  outline: 3px solid #83b3d3;
+  border-radius: 4px 0 0 4px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 287px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.range-toggle:not(:disabled):active {
+  outline: 3px solid #83B3D3;
+  border-radius: 5px;
+}
+
+.toggle-min {
+  left: 0;
+  top: -8px;
+}
+
+.toggle-max {
+  right: -1px;
+  top: -8px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+.control-label {
+  margin-left: 16px;
 }
