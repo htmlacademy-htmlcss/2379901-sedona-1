@@ -900,8 +900,9 @@ body {
   background-repeat: no-repeat;
   background-position: right 18px center;
   padding-right: 40px;
-  margin-right: 0 auto;
+  margin-left: auto;
   -webkit-appearance: none;
+          appearance: none;
 }
 
 .select-control:hover {
@@ -1217,7 +1218,6 @@ body {
   min-width: 160px;
   min-height: 48px;
   margin-left: 70px;
-
 }
 
 .view-table {
