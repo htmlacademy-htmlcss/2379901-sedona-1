@@ -284,7 +284,7 @@ body {
   line-height: 26px;
   font-size: 22px;
   text-align: center;
-  color: #000000;
+  color: #333333;
 }
 
 .slogan-title {
@@ -867,7 +867,7 @@ body {
 }
 
 .reset-button:focus-visible {
-  outline-color: 3px solid rgba(131, 179, 211, 1);
+  outline-color: #83b3d3;
 }
 
 .reset-button:active {
@@ -1045,7 +1045,7 @@ body {
 .pagination-link:hover,
 .pagination-link:focus-visible {
   background: #68a2ca;
-  outline-color: 1px solid #82b3d3;
+  outline-color: #82b3d3;
 }
 
 .pagination-link:active {
